@@ -35,9 +35,8 @@
             android:id="@+id/btn_add"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add"
-
-            />
+            android:onClick="@{()->myviewmodel.setValue()}"
+            android:text="Add" />
 
     </LinearLayout>
 </layout>
