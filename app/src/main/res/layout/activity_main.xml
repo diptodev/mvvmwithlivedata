@@ -15,9 +15,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:gravity="center"
+        android:gravity="center|top"
         android:orientation="vertical"
-
         tools:context=".MainActivity">
 
         <TextView
@@ -54,6 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
+            android:minHeight="30dp"
             android:text="@={myviewmodel.myCount}" />
 
         <EditText
