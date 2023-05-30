@@ -7,12 +7,15 @@ import androidx.lifecycle.ViewModel
 class MyViewModel(startingTotal: Int) : ViewModel() {
 
     var count = MutableLiveData<Int>()
+    var myCount = MutableLiveData<String>()
     val totalCount: LiveData<Int> get() = count
     var userName = MutableLiveData<String>()
 
     init {
         count.value = startingTotal
         userName.value = "Dipto"
+        myCount.value = "4"
+        count ?: "adf"
     }
 
 
