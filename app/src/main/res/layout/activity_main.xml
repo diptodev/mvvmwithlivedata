@@ -38,5 +38,19 @@
             android:onClick="@{()->myviewmodel.setValue()}"
             android:text="Add" />
 
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter any username"
+            android:text="@={myviewmodel.userName}" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{myviewmodel.userName}"
+            android:textSize="30sp"
+
+            />
+
     </LinearLayout>
 </layout>
